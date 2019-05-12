@@ -33,6 +33,7 @@ class PetsController < ApplicationController
   end
 
   patch '/pets/:id' do 
+    if !params[:pet][:owner_id] == params[:owner_id]
   binding.pry
     redirect to "pets/#{@pet.id}"
   end
