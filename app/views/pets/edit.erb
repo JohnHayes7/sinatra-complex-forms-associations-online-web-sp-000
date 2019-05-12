@@ -3,8 +3,8 @@
 <form action="/pets/<%=@pet.id%>" method="POST">
   <input type="hidden" id="hidden" name="_method" value="patch"/>
   <label>Pet Name: </label><br>
-  <input type="text" name="pet[name]" id="pet_name" value="<%=@pet.name%>"/>
+  <input type="text" name="pet[name]" id="pet_name" value="<%=@pet.name%>"/><br>
   
-  
+  <label>Choose an existing pet: </label>
   
 </form>
