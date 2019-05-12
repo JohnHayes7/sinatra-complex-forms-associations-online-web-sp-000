@@ -36,6 +36,7 @@ class PetsController < ApplicationController
     if !params[:pet][:owner_id] == params[:id]
       params[:pet][:owner_id] == params[:id]
     end
+    @pet = Pet.find(params[:id])
   # binding.pry
     redirect to "pets/#{@pet.id}"
   end
